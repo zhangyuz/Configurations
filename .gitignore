@@ -1,0 +1,10 @@
+tags
+cscope*
+ncscope.*
+*.pyc
+
+!.gitignore
+*\.patch
+
+*\.pid
+output/

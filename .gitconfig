@@ -1,0 +1,42 @@
+[user]
+    name = Zhang Yuzheng
+    email = me@zhanyuzheng.com
+#[url "git://192.168.1.108/XXX/"]
+#	insteadOf = git://review.sonyericsson.net/
+#	insteadOf = git://android.git.kernel.org/
+#	insteadOf = https://android.googlesource.com/
+#	insteadOf = ssh://android.XXX.net/
+
+[color]
+	ui = auto
+[merge]
+	tool = kdiff3
+	log = true
+	conflictstyle = diff3
+[alias]
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	br = branch
+	sst = show --stat
+	l1 = log --pretty=format:'%C(yellow) %h %C(green) %an %C(red) %ci %C(blue) %s' --no-merges --date=short
+	l = log --pretty=format:'%C(yellow) %h %C(green) %cn %C(red) %ci %C(blue) %s' --no-merges --date=short
+	cpk = cherry-pick -xe
+	stt = status
+	dfc = diff --cached
+	dfcs = diff --cached --stat
+	df = diff
+	bs = blame -s
+	dfs = diff --stat
+    comsin = commit --signoff
+    cln = clean -dfx
+#[log]
+#	decorate = full
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[commit]
+	template = ~/.gitmessage.txt
+[diff]
+	tool = meld
+	submodule = log
+[status]
+	submodulesummary = 1
