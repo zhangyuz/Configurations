@@ -1,5 +1,5 @@
 # Install miniconda or anaconda
-pip install setuptools pipenv ipython python-dev python3-dev bs4
+pip install setuptools pipenv ipython python-dev python3-dev bs4 openpyxl
 conda create -n py27 python=2.7
 
 # SourceCodePro
